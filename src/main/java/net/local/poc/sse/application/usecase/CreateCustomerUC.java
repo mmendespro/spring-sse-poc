@@ -24,7 +24,7 @@ public class CreateCustomerUC {
 
     public CustomerResponse handle(CustomerRequest request) {
         loadCustomerPort.load(request.name()).ifPresent(cust -> {
-            throw new RuntimeException(String.format("Customer % already exist", cust.getName()));
+            throw new RuntimeException(String.format("Customer %s already exist", cust.getName()));
         });
 
         var customer = new Customer(UUID.randomUUID(), request.name(), request.email());
