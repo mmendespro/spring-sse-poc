@@ -7,6 +7,14 @@ A server-sent event is when a web page automatically gets updates from a server.
 
 ![sse](./img/sse.png)
 
+## Requirements
+
+For building and running the application you need:
+
+  - Java 17 
+  - Maven 3.6.0
+  - Spring Boot Framework
+
 ## Quickstart
 
 From the command line do:
@@ -17,3 +25,7 @@ cd spring-sse-poc
 mvn clean package
 java -jar target/spring-sse-poc-0.0.1-SNAPSHOT.jar
 ```
+
+## Copyright
+
+Released under the Apache License 2.0. See the [LICENSE](https://github.com/codecentric/springboot-sample-app/blob/master/LICENSE) file.
