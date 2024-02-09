@@ -1,0 +1,34 @@
+POST http://localhost:8080/v1/customers
+Content-Type: application/json
+
+{
+    "name": "Fernando Henrique Cardoso",
+    "email": "fhc@gov.br"
+}
+
+###
+POST http://localhost:8080/v1/customers
+Content-Type: application/json
+
+{
+    "name": "Itamar Franco",
+    "email": "itamarf@gov.br"
+}
+
+###
+POST http://localhost:8080/v1/customers
+Content-Type: application/json
+
+{
+    "name": "Fernando Collor de Melo",
+    "email": "fcollor@gov.br"
+}
+
+###
+POST http://localhost:8080/v1/customers
+Content-Type: application/json
+
+{
+    "name": "Luiz Ignacio Lulla da Silva",
+    "email": "lulla@gov.br"
+}
