@@ -63,6 +63,8 @@ public class CustomerStreamController {
     }
 
     protected void processEvent(CustomerEvent event) {
+        event.stopTimer();
+
         Collection<WebClient> matchingEmitters = EMITTERS.values()
                                                          .stream()
                                                          .flatMap(Collection::stream)

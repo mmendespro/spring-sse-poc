@@ -14,6 +14,7 @@ public class LogListener {
     @Async
     @EventListener
     void onEvent(InternalEvent event) {
+        event.stopTimer();
         if (event.isSuccess()) {
             log.info("Event success {}", event.toJson());
         } else {
